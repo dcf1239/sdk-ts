@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/main.css",
+    "main.js": "/static/js/main.js",
+    "index.html": "/index.html",
+    "main.css.gz": "/main.css.gz",
+    "precache-manifest.cbc40000c2f9cdb07ad1b9b49bec5a79.js": "/precache-manifest.cbc40000c2f9cdb07ad1b9b49bec5a79.js",
+    "service-worker.js": "/service-worker.js",
+    "service-worker.js.gz": "/service-worker.js.gz",
+    "static/css/main.54f56c9d.css.gz": "/static/css/main.54f56c9d.css.gz",
+    "static/js/main.js.gz": "/static/js/main.js.gz"
+  },
+  "entrypoints": [
+    "static/css/main.54f56c9d.css",
+    "main.css",
+    "static/js/main.js"
+  ]
+}

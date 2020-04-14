@@ -1,13 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { BrowserRouter } from 'react-router-dom';
+
+import zh_CN from 'antd/lib/locale-provider/zh_CN'
+import { ConfigProvider, message } from 'antd'
+ 
+message.config({
+  maxCount: 1,
+})
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <ConfigProvider  locale={zh_CN}>
+      <App />
+    </ConfigProvider >
+  </BrowserRouter>,
   document.getElementById('root')
 );
 

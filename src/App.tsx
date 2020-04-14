@@ -1,24 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.less';
+import Header from './component/header';
 
-function App() {
+import Router from './router/router';
+//引入http请求
+import './http';
+
+
+declare global
+{
+  interface Window
+  {
+    $http: any,
+    account:string,
+    base_url:string
+  }
+}
+function App()
+{
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header name='SDK 登陆 开发'></Header>
+      <div className="main-wrapper">
+        <Router></Router>
+      </div>
     </div>
   );
 }
