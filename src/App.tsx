@@ -2,7 +2,7 @@ import React from 'react';
 import './App.less';
 import Header from './component/header';
 
-import Router from './router/router';
+import { Router } from './router/router';
 //引入http请求
 import './http';
 
@@ -12,8 +12,10 @@ declare global
   interface Window
   {
     $http: any,
-    account:string,
-    base_url:string
+    account: string,
+    base_url: string,
+    arg:string,
+    company_id:string
   }
 }
 function App()

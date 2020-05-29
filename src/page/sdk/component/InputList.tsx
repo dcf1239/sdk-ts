@@ -6,19 +6,23 @@ interface Props
     value: string,
     setcontent: any,
     type: string,
-    placeholder?:string
+    placeholder?: string,
+    style?: any
+    classname?: string
 }
-const InputList: React.SFC<Props> = ({ text, value, setcontent, type ,placeholder='请输入内容'}) =>
+const InputList: React.SFC<Props> = ({ classname='', style, text, value, setcontent, type, placeholder = '请输入内容' }) =>
 {
     return (
-        <div className="input-list">
+        <div className={`input-list ${classname}`}>
             <span className="text"> {text}</span>
             <Input
-                // value={value}
+                style={style}
+                defaultValue={value}
                 size="large"
+                value={value}
                 placeholder={placeholder}
                 onChange={(e: any) => setcontent(type, e.target.value)}
-            ></Input> 
+            ></Input>
         </div>
     )
 }

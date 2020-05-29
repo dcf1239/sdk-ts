@@ -8,7 +8,7 @@ const Header: React.SFC<any> = () =>
     return (
         <header className='header'>
             <div className="logo">
-                <img src="img/53kf-logo.svg" alt="" />
+                <img src="/deve/img/53kf-logo.svg" alt="" />
             </div>
             <ul className='menu-row'>
                 <li><a href={window.base_url}><HomeOutlined /><span>网站首页</span></a> </li>

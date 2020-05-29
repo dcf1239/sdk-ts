@@ -21,9 +21,9 @@ const appBuildPathFile = () => config => {
                 test: /\.js(\?.*)?$|\.css$/,
                 threshold: 1024
             }),
-            new MiniCssExtractPlugin({
-                chunkFilename: 'static/css/[name].css',
-            })
+            // new MiniCssExtractPlugin({
+            //     chunkFilename: 'static/css/[name].css',
+            // })
         )
 
         // 更改生产模式输出的文件名

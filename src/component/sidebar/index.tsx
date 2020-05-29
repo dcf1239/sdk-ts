@@ -15,10 +15,10 @@ let menu: Array<
         {
             title: "开发者管理",
             children: [
-                // {
-                //     title: "应用对接开发",
-                //     routeName: "/development"
-                // },
+                {
+                    title: "应用对接开发",
+                    routeName: "/deve/app-docking"
+                },
                 // {
                 //     title: "应用管理",
                 //     routeName: "/management"
